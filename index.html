@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Nothing loads from anywhere else: no fonts, scripts, images or trackers. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="A private, self-hosted personal health record used by one family.">
+  <title>JW HomeChart</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #f7f5f0;
+      --surface: #fdfcf9;
+      --ink: #23262d;
+      --muted: #585c66;
+      --line: #e3dfd6;
+      --accent: #8a3d4c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #16191e;
+        --surface: #1c2027;
+        --ink: #ebe8e1;
+        --muted: #a9aeb7;
+        --line: #2e333b;
+        --accent: #e6a9b4;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1.0625rem/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 40rem; margin: 0 auto; padding: 4rem 1rem 3rem; }
+    .eyebrow {
+      margin: 0 0 .5rem;
+      color: var(--accent);
+      font-size: .8125rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font: 600 clamp(2rem, 6vw, 2.75rem)/1.15 ui-serif, Georgia, "Times New Roman", serif;
+      letter-spacing: -.01em;
+    }
+    .lede { margin: 1rem 0 0; color: var(--muted); font-size: 1.1875rem; }
+    section { margin-top: 2.75rem; }
+    h2 { margin: 0 0 .75rem; font-size: 1.125rem; }
+    p { margin: 0 0 1rem; }
+    ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .75rem; }
+    li {
+      padding: 1rem 1.125rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+    }
+    li strong { display: block; margin-bottom: .125rem; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    footer p { margin: 0 0 .5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Personal health record</p>
+      <h1>JW HomeChart</h1>
+      <p class="lede">One family's medical chart, kept at home on its own computer. It isn't offered to the public, and there's nothing to sign up for.</p>
+    </header>
+
+    <section aria-labelledby="what">
+      <h2 id="what">What it does</h2>
+      <p>It keeps a family's lab results, visits, medications, imaging and notes in one place, so they're easy to look back on and to share with a doctor.</p>
+      <p>With each person's permission, it reads their records from athenahealth, Epic (MyChart) and Oura through each service's own patient sign-in. Everyone signs in with their own account and chooses what to share.</p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy</h2>
+      <ul>
+        <li><strong>Kept at home</strong>Records are stored only on the family's own computer. There's no cloud service and no copy on anyone else's servers.</li>
+        <li><strong>Read only</strong>It reads records. It never changes anything in a medical record.</li>
+        <li><strong>Never shared</strong>Nothing is sent to anyone outside the family. There are no analytics, ads or trackers, and no data is ever sold or shared.</li>
+        <li><strong>Always your choice</strong>Access can be withdrawn at any time, in the app or from the patient portal. Disconnecting deletes the app's access.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>This page sets no cookies and loads nothing from other sites.</p>
+      <p>athenahealth, Epic, MyChart and Oura are trademarks of their owners. This app isn't affiliated with or endorsed by them.</p>
+      <p>Updated November 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
