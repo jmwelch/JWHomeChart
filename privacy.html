@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Nothing loads from anywhere else: no fonts, scripts, images or trackers. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="How JW HomeChart reads, keeps and protects a family's health records.">
+  <title>Privacy policy · JW HomeChart</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #f7f5f0;
+      --surface: #fdfcf9;
+      --ink: #23262d;
+      --muted: #585c66;
+      --line: #e3dfd6;
+      --accent: #8a3d4c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #16191e;
+        --surface: #1c2027;
+        --ink: #ebe8e1;
+        --muted: #a9aeb7;
+        --line: #2e333b;
+        --accent: #e6a9b4;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1.0625rem/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 40rem; margin: 0 auto; padding: 4rem 1rem 3rem; }
+    .eyebrow {
+      margin: 0 0 .5rem;
+      color: var(--accent);
+      font-size: .8125rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .eyebrow a { color: inherit; text-decoration: none; }
+    h1 {
+      margin: 0;
+      font: 600 clamp(2rem, 6vw, 2.75rem)/1.15 ui-serif, Georgia, "Times New Roman", serif;
+      letter-spacing: -.01em;
+    }
+    .lede { margin: 1rem 0 0; color: var(--muted); font-size: 1.1875rem; }
+    section { margin-top: 2.5rem; }
+    h2 { margin: 0 0 .75rem; font-size: 1.125rem; }
+    p { margin: 0 0 1rem; }
+    ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+    li { margin-bottom: .375rem; }
+    a { color: var(--accent); }
+    .summary { list-style: none; padding: 0; display: grid; gap: .75rem; }
+    .summary li {
+      margin: 0;
+      padding: 1rem 1.125rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+    }
+    .summary strong { display: block; margin-bottom: .125rem; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    footer p { margin: 0 0 .5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow"><a href="./">JW HomeChart</a></p>
+      <h1>Privacy policy</h1>
+      <p class="lede">JW HomeChart is a personal health record that one family runs for itself, on its own computer. This page explains what it reads, where that goes, and how to stop it.</p>
+    </header>
+
+    <section aria-labelledby="short">
+      <h2 id="short">In short</h2>
+      <ul class="summary">
+        <li><strong>Kept at home</strong>Records are stored only on the family's own computer. There's no cloud service, no cloud backup and no copy on anyone else's servers.</li>
+        <li><strong>Used only by the family</strong>Records are used only to show family members their own health information. They are never sold, shared, used for advertising or research, or given to anyone else.</li>
+        <li><strong>Read only</strong>The app reads records. It never writes to or changes a medical record.</li>
+        <li><strong>Your choice, always</strong>Each person decides what to share on their health service's own approval screen, and can stop it at any time.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="who">
+      <h2 id="who">Who this applies to</h2>
+      <p>The app isn't offered to the public and has no sign-up. Its only users are members of one family, each with their own login. Parents look after their children's records. A login can see only the people it has been given access to.</p>
+    </section>
+
+    <section aria-labelledby="what">
+      <h2 id="what">What it reads</h2>
+      <p>When a family member connects a health service and approves it, the app reads that person's records from the service through its official patient sign-in. The services are athenahealth, Epic (MyChart), healow (eClinicalWorks) and Oura. It reads only what the person approves, which can include:</p>
+      <ul>
+        <li>visits, diagnoses and health concerns, allergies, medications and immunizations;</li>
+        <li>lab and test results, vital signs, procedures, orders and referrals, implanted devices and the care team;</li>
+        <li>clinical notes and documents, and the details that come with a record, such as the patient's name and date of birth and the names of their doctors and clinics;</li>
+        <li>from Oura: daily sleep, readiness, activity, stress, blood oxygen and tags.</li>
+      </ul>
+      <p>Family members can also add things themselves: symptoms, notes, photos and scans of documents, and files from home devices.</p>
+    </section>
+
+    <section aria-labelledby="where">
+      <h2 id="where">Where it's kept</h2>
+      <ul>
+        <li>Records and files are stored on the family's own computer, in a local database and folder. Copies made before each import, so that an import can be undone, stay on the same computer.</li>
+        <li>Sign-in tokens and app keys are kept in the computer's secure keychain, never in files.</li>
+        <li>The app can't be reached from the internet. Family members' phones reach it over a private, encrypted network that only the family's own devices can join.</li>
+        <li>Reading scanned documents and any help from AI happen on the same computer. Nothing is sent to an outside AI or cloud service.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="use">
+      <h2 id="use">How it's used</h2>
+      <p>Only to show each family member their own health information: lists, charts and trends, and summaries to take to appointments. The app has no analytics, advertising, trackers or crash reporting. It sends nothing to anyone except the requests it makes to the services above to read the person's own records.</p>
+    </section>
+
+    <section aria-labelledby="how-long">
+      <h2 id="how-long">How long access lasts</h2>
+      <p>When someone connects a service, the app asks for ongoing access so it can check for new records about once a day. That access lasts until the person disconnects it. Some services also end it sooner: after a period the person chooses on the service's approval screen, or after 90 days without use. The person is then asked to sign in again.</p>
+    </section>
+
+    <section aria-labelledby="keep">
+      <h2 id="keep">How long records are kept</h2>
+      <p>Records stay on the family's computer until the family deletes them. Disconnecting a service stops all further reading and deletes the app's sign-in for it. Records already brought in stay until someone deletes them, and each import can be undone in one step.</p>
+    </section>
+
+    <section aria-labelledby="stop">
+      <h2 id="stop">How to stop it and delete records</h2>
+      <ul>
+        <li><strong>In the app:</strong> open the person's Connections page and choose Disconnect. To remove records, undo the import that brought them in, or delete them one at a time.</li>
+        <li><strong>At the health service:</strong> remove JW HomeChart from the apps connected to your patient portal (for example, linked apps in MyChart, or connected apps in healow). The app then can't read anything more.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">Security</h2>
+      <p>Connections to health services use encrypted HTTPS and each service's own sign-in, with a one-time code for each sign-in. The app never sees anyone's patient-portal password. Family logins use passwords stored only as secure hashes. The app runs only on the family's computer and accepts no connections from the internet.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes and questions</h2>
+      <p>If this policy changes, this page will change too, and the date below will say when. Family members can ask the person who runs the app. Anyone else can reach them through this page's <a href="https://github.com/jmwelch/JWHomeChart">repository on GitHub</a>.</p>
+    </section>
+
+    <footer>
+      <p>This page sets no cookies and loads nothing from other sites.</p>
+      <p>athenahealth, Epic, MyChart, healow, eClinicalWorks and Oura are trademarks of their owners. This app isn't affiliated with or endorsed by them.</p>
+      <p>Updated 13 November 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
